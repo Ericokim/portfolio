@@ -1,0 +1,448 @@
+/* ===========================
+   General Styles & Reset
+   =========================== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f5f5f5;
+}
+
+/* ===========================
+   Navigation Bar
+   =========================== */
+nav {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 1rem 2rem;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav table {
+  border: none !important;
+}
+
+nav h2 {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+nav .nav-links {
+  display: inline;
+}
+
+nav .nav-links tr td {
+  display: inline;
+  padding: 0;
+}
+
+nav .nav-links a {
+  color: #fff;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  margin: 0 0.25rem;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  font-weight: 500;
+}
+
+nav .nav-links a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* ===========================
+   Header/Hero Section
+   =========================== */
+header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+header table {
+  border: none !important;
+  background: transparent;
+}
+
+header h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  animation: fadeInDown 1s ease;
+}
+
+header p {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.95;
+  animation: fadeInUp 1s ease;
+}
+
+header video {
+  border-radius: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+  max-width: 100%;
+}
+
+/* ===========================
+   Sections
+   =========================== */
+section {
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  color: #667eea;
+  text-align: center;
+  position: relative;
+  padding-bottom: 1rem;
+}
+
+section h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 2px;
+}
+
+section h3 {
+  color: #764ba2;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ===========================
+   About Section
+   =========================== */
+#about {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#about table {
+  border: none !important;
+}
+
+#about article p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+#about ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+#about ul li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: #555;
+}
+
+#about ul li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #667eea;
+  font-weight: bold;
+}
+
+#about audio {
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* ===========================
+   Work Section
+   =========================== */
+#work {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#work > p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+#work table {
+  border: none !important;
+}
+
+#work article {
+  background: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  height: 100%;
+}
+
+#work article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+#work article h3 {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+#work article p {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+#work article a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+#work article a:hover {
+  color: #764ba2;
+  text-decoration: underline;
+}
+
+/* ===========================
+   Resume Section
+   =========================== */
+#resume {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#resume table {
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+#resume table thead {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+#resume table th {
+  padding: 1rem;
+  text-align: left;
+  font-weight: 600;
+}
+
+#resume table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+#resume table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+/* ===========================
+   Contact Section
+   =========================== */
+#contact {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+#contact > p {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 2rem;
+}
+
+#contact a {
+  color: #667eea;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+#contact a:hover {
+  color: #764ba2;
+}
+
+#contact fieldset {
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+#contact legend {
+  color: #667eea;
+  font-size: 1.3rem;
+  font-weight: 600;
+  padding: 0 1rem;
+}
+
+#contact label {
+  color: #555;
+  font-weight: 500;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact select,
+#contact textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+#contact input[type="text"]:focus,
+#contact input[type="email"]:focus,
+#contact input[type="tel"]:focus,
+#contact select:focus,
+#contact textarea:focus {
+  outline: none;
+  border-color: #667eea;
+}
+
+#contact button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  padding: 0.75rem 2rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-right: 0.5rem;
+}
+
+#contact button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+#contact button[type="reset"] {
+  background: #6c757d;
+}
+
+#contact button[type="reset"]:hover {
+  background: #5a6268;
+  box-shadow: 0 5px 15px rgba(108, 117, 125, 0.4);
+}
+
+/* ===========================
+   Footer
+   =========================== */
+footer {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer table {
+  border: none !important;
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  color: #667eea;
+}
+
+/* ===========================
+   Animations
+   =========================== */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ===========================
+   Responsive Design
+   =========================== */
+@media (max-width: 768px) {
+  nav h2 {
+    font-size: 1.5rem;
+  }
+
+  nav .nav-links a {
+    padding: 0.3rem 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 2rem 1rem;
+  }
+
+  section h2 {
+    font-size: 2rem;
+  }
+}
